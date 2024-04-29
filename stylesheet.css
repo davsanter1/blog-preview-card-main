@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--Yellow);
+}
+
+.card{
+    width: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--White);
+    padding: 1.5em;
+    border-radius: 1.25em;
+    border: 0.0625em solid var(--Black);
+    box-shadow: 0.5em 0.5em 0px 0px #000;
+    gap: 1.5em;
+    margin-bottom: 0.625em;
+}
+
+.card img{
+    border-radius: 1.25em;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75em;
+    align-self: stretch;
+}
+
+#button{
+    display: flex;
+    padding: 0.25em 0.75em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    background: var(--Yellow, #F4D04E);
+    width: fit-content;
+    color: var(--Black, #111);
+    font-family: Figtree;
+    font-size: 0.875em;
+    font-weight: 800;
+}
+
+#date{
+    color: var(--Black, #111);
+    font-family: Figtree;
+    font-size: 0.875em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.content h1{
+    color: var(--Black, #111);
+    font-family: Figtree;
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.content h1:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+#info{
+    color: var(--Grey, #7F7F7F);
+    font-family: Figtree;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    color: var(--Black, #111);
+    font-family: Figtree;
+    font-size: 0.875em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /
+}
+
+.person img{
+    width: 2em;
+    height: 2em;
+}
